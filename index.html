@@ -31,7 +31,7 @@
         <!--Pasek nawigacyjny-->
         <nav>
           <ul class="navigation-elements">
-            <li>
+            <li class="agency">
               <a href="index.html">Agencja</a>
             </li>
             <li>
@@ -67,7 +67,16 @@
       <section class="interactive-elements-2 background section">
         <div class="container">
           <h1>EFEKTYWNE ROZWIĄZANIA <br />DLA WASZEGO BIZNESU</h1>
-          <button type="button" class="main-button">Zamów usługe</button>
+          <button data-modal-open type="button" class="main-button">
+            Zamów usługe
+          </button>
+          <div class="modal is-hidden" data-modal>
+            <button data-modal-close class="close-button">
+              <svg class="close-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
       <section class="space container">
@@ -143,28 +152,38 @@
         <h2>Czym sie zajmujemy</h2>
         <ul class="card-set">
           <li class="card">
-            <img
-              src="./images/what_we_do/codding.jpg"
-              alt="osoba koduje na tablecie"
-              width="370"
-              height="294"
-            />
+            <div class="thumb">
+              <img
+                src="./images/what_we_do/codding.jpg"
+                alt="osoba koduje na tablecie"
+                width="370"
+                height="294"
+              />
+
+              <p class="label">Aplikacje komputerowe</p>
+            </div>
           </li>
           <li class="card">
-            <img
-              src="./images/what_we_do/interface.jpg"
-              alt="osoba tworzy interface aplikacji"
-              width="370"
-              height="294"
-            />
+            <div class="thumb">
+              <img
+                src="./images/what_we_do/interface.jpg"
+                alt="osoba tworzy interface aplikacji"
+                width="370"
+                height="294"
+              />
+              <p class="label">Aplikacje mobilne</p>
+            </div>
           </li>
           <li class="card">
-            <img
-              src="./images/what_we_do/colors.jpg"
-              alt="osoba dobiera kolor na tablecie"
-              width="370"
-              height="294"
-            />
+            <div class="thumb">
+              <img
+                src="./images/what_we_do/colors.jpg"
+                alt="osoba dobiera kolor na tablecie"
+                width="370"
+                height="294"
+              />
+              <p class="label">Rozwiązania graficzne</p>
+            </div>
           </li>
         </ul>
       </section>
@@ -721,5 +740,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
