@@ -31,7 +31,7 @@
         <!--Pasek nawigacyjny-->
         <nav>
           <ul class="navigation-elements">
-            <li class="agency">
+            <li class="underline-1">
               <a href="index.html">Agencja</a>
             </li>
             <li>
@@ -70,12 +70,14 @@
           <button data-modal-open type="button" class="main-button">
             Zamów usługe
           </button>
-          <div class="modal is-hidden" data-modal>
-            <button data-modal-close class="close-button">
-              <svg class="close-icon" width="18px" height="18px">
-                <use href="./images/icons.svg#icon-close"></use>
-              </svg>
-            </button>
+          <div class="modal">
+            <div class="window is-hidden" data-modal>
+              <button data-modal-close class="close-button">
+                <svg class="close-icon" width="18px" height="18px">
+                  <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -740,6 +742,7 @@
         </div>
       </div>
     </footer>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
