@@ -67,18 +67,9 @@
       <section class="interactive-elements-2 background section">
         <div class="container">
           <h1>EFEKTYWNE ROZWIĄZANIA <br />DLA WASZEGO BIZNESU</h1>
-          <button data-modal-open type="button" class="main-button">
+          <button type="button" class="main-button" data-modal-open>
             Zamów usługe
           </button>
-          <div class="modal">
-            <div class="window is-hidden" data-modal>
-              <button data-modal-close class="close-button">
-                <svg class="close-icon" width="18px" height="18px">
-                  <use href="./images/icons.svg#icon-close"></use>
-                </svg>
-              </button>
-            </div>
-          </div>
         </div>
       </section>
       <section class="space container">
@@ -742,7 +733,15 @@
         </div>
       </div>
     </footer>
-
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal window">
+        <button type="button" class="close-button" data-modal-close>
+          <svg class="close-icon" width="18px" height="18px">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
